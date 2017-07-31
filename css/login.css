@@ -1,0 +1,39 @@
+/*
+	login.css  登陆样式
+
+*/
+body {
+    -webkit-perspective: 800px;
+    perspective: 800px;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    font-family: 'Gudea', sans-serif;
+    background: #EA5C54;
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #EA5C54), color-stop(100%, #bb6dec));
+    background: -webkit-linear-gradient(-45deg, #EA5C54 0%, #bb6dec 100%);
+    background: -webkit-linear-gradient(315deg, #EA5C54 0%, #bb6dec 100%);
+    background: linear-gradient(135deg, #EA5C54 0%, #bb6dec 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#EA5C54 ', endColorstr='#bb6dec',GradientType=1 );
+}
+.login{
+	 width: 240px;
+    border-top: 2px solid #D8312A;
+    height: 300px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    padding: 100px 40px 40px 40px;
+    background: #35394a;
+    background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, #35394a), color-stop(100%, #1f222e));
+    background: -webkit-linear-gradient(45deg, #35394a 0%, #1f222e 100%);
+    background: linear-gradient(45deg, #35394a 0%, #1f222e 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#35394a', endColorstr='#1f222e',GradientType=1 );
+}
+
+
+
+
