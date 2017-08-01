@@ -1,0 +1,62 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes" />    
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<meta name="format-detection" content="telephone=no"/>
+	<meta name="msapplication-tap-highlight" content="no" />
+	<title>个人简历 - 登陆</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/login.css">
+</head>
+<body>
+	<div id="loading" class="spinners">
+		<div id="preloader_4" class="preloader_4">
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+	<div id="login" class="login">
+		<div class="login-title">
+			<span>账号登陆</span>
+		</div>
+		<div class="login-fields">
+			<div class="login_fields-user">
+				<div class="icon">
+					<img src="images/user_icon_copy.png">
+				</div>
+				<input type="text" placeholder="用户名" id="user" class="user">
+				<div class="validation">
+					<img src="images/tick.png">
+				</div>
+			</div>
+			<div class="login_fields-pwd">
+				<div class="icon">
+					<img src="images/lock_icon_copy.png">
+				</div>
+				<input type="text" placeholder="密码" id="pwd" class="pwd">
+				<div class="validation">
+					<img src="images/tick.png">
+				</div>
+			</div>
+			<div class="login-fields-submit">
+				<input type="submit" id="submit" class="submit" value="登陆">
+				<div id="forgot" class="forgot">忘记密码?</div>
+			</div>
+			<div class="Prompt">
+				If you don't know the password, please try to " forget password "!
+			</div>
+		</div>
+	</div>
+	<input type="hidden" value="admin" class="hidden_user" id="hidden_user">
+	<input type="hidden" value="admin" class="hidden_pwd" id="hidden_pwd">
+	<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="js/login.js"></script>
+</body>
+</html>
