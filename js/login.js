@@ -10,7 +10,6 @@
             login.executionEvent();
         },
         autoHide: function(ele,timer){
-            console.log(ele)
             setTimeout(function () {
                 ele.fadeOut(1000,function(){
                     ele.remove();
@@ -34,7 +33,6 @@
         judgementCorrec: function(){
             var $this = $(this),
                 $value = $this.val();
-            console.log($this)
             if($value.length > 0){
                 $this.next().animate({
                     "opacity":1,
@@ -59,7 +57,7 @@
                     mes: "用户名和密码不能为空"
                 });
             }else if(userVal == hidden_user && pwdVal == hidden_pwd){
-                window.location.href = "index.html"
+                window.location.href = "page/introduction.html"
             }
         },
         dialog : function (set){
