@@ -1,0 +1,133 @@
+/*
+    details.css  个人详情
+*/
+body {
+    -webkit-perspective: 800px;
+    perspective: 800px;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    font-family: 'Gudea', sans-serif;
+    background: #000;
+}
+.wrapper{
+    width:100%;
+    height:100%;
+    position: relative;
+
+}
+header{
+    width:100%;
+    height:3rem;
+    background:rgba(255,255,255,.2);
+    line-height: 3rem;
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    top:0;
+    left:0;
+    font-size: 1.2rem;
+}
+.openBtn{
+    width: 2rem;
+    height:1.5rem;
+    right:1rem;
+    top:.75rem;
+    position: absolute;
+}
+.top_liner{
+    width:2rem;
+    height:1px;
+    background: #fff;
+    position: absolute;
+    top:0;
+    left:0;
+    -webkit-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+.bottom_liner{
+    width:2rem;
+    height:1px;
+    background: #fff;
+    position: absolute;
+    bottom:0;
+    left:0;
+    -webkit-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+.top_close{
+    position: absolute;
+    top: 10.5px;
+    left:0;
+    -webkit-transform: rotate(45deg);
+}
+.bottom_close{
+    position: absolute;
+    bottom: 8.5px;
+    left:0;
+    -webkit-transform: rotate(-45deg);
+}
+.listing{
+    width:100%;
+    height:calc(100% - 3rem);
+    position: fixed;
+    top:3rem;
+    left:0;
+    background:rgba(255,255,255,.2);
+    display: none;
+}
+.listing li{
+    width: 100%;
+    height: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    border-bottom: .5px solid #9e9e9e;
+    color: #fff;
+    font-size: 1.2rem;
+}
+.contact{
+    width:2rem;
+    height:auto;
+    position: fixed;
+    bottom:2rem;
+    right:2rem;
+}
+.depoly{
+    width:2rem;
+    height:2rem;
+    font-size: 1.8rem;
+    color: #fff;
+    text-align: center;
+    line-height: 2.1rem;
+    background: #35394a;
+    -webkit-border-radius:100%;
+    -moz-border-radius:100%;
+    border-radius:100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

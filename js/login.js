@@ -112,8 +112,7 @@
             $(".login-fields,.login-fields").on("input propertychange","input",login.judgementCorrec);
             $("#submit").on("click",login.Verification);
             $("#forgot").on("click",login.forgots)
-        },
-
+        }
     }
     login._init();
     $.dialog = function(set){

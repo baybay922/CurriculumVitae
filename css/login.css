@@ -9,16 +9,10 @@ body {
     margin: 0;
     overflow: hidden;
     font-family: 'Gudea', sans-serif;
-    background: #EA5C54;
-    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #EA5C54), color-stop(100%, #bb6dec));
-    background: -webkit-linear-gradient(-45deg, #EA5C54 0%, #bb6dec 100%);
-    background: -webkit-linear-gradient(315deg, #EA5C54 0%, #bb6dec 100%);
-    background: linear-gradient(135deg, #EA5C54 0%, #bb6dec 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#EA5C54 ', endColorstr='#bb6dec',GradientType=1 );
+    background: #000;
 }
 .login{
     width: 240px;
-    border-top: 2px solid #D8312A;
     height: 300px;
     position: absolute;
     left: 0;
