@@ -3,14 +3,15 @@
  * details.js
  */
 ;(function($){
-    //var path = "10.70.12.88";
     var startx, starty,
         html = "",
         ind_A = 0,
+        model = 1,
         page = $(".page"),
         cur_page = 1,
         len = 4,
-        tot_page = 1;
+        tot_page = 1,
+        res = null;
 
     var _init = function (){
             var _this = this;
@@ -28,6 +29,7 @@
             });
             $("#listing").on("click","li",function () {
                 var ind = $(this).attr("datatype");
+                model = ind;
                 _this.getData(ind,_this)
                 _this.displaylist(_this);
 
@@ -53,6 +55,26 @@
                     case 2:
                         _this.slidedown();
                         hasclass = false;
+                        break;
+                    case 3:
+                        if(model == 4){
+                            cur_page++;
+                            if(cur_page > tot_page){
+                                cur_page = tot_page;
+                            }
+                            _this.getpage(res, _this, cur_page);
+                        }
+                        console.log(cur_page)
+                        break;
+                    case 4:
+                        if(model == 4){
+                            cur_page--;
+                            if(cur_page < 1){
+                                cur_page = 1;
+                            }
+                            _this.getpage(res, _this, cur_page);
+                        }
+                        console.log(cur_page)
                         break;
                     default:
                 }
@@ -143,7 +165,7 @@
                 var span_w = $(this).find("span:last-child").attr("data-width");
                 $(this).find("span").find("i").animate({
                     "width": span_w+"%"
-                },800).html(span_w+"%")
+                },800);
             })
         },
         getInfo: function(result, _this){
@@ -216,57 +238,19 @@
             $(cont).appendTo(page);
         },
         getobject: function(result, _this){//获取个人项目
-            _this.getpage(result, _this, cur_page);
-            var windowHeight = $(window).height(),
-                $body = $("body");
-            $body.css("height", windowHeight);
-            var startX, startY, moveEndX, moveEndY, X, Y;
-
-            $("body").on("touchstart", function(e) {
-                e.preventDefault();
-                startX = e.originalEvent.changedTouches[0].pageX,
-                    startY = e.originalEvent.changedTouches[0].pageY;
-            });
-            $("body").on("touchmove", function(e) {
-                e.preventDefault();
-                moveEndX = e.originalEvent.changedTouches[0].pageX,
-                    moveEndY = e.originalEvent.changedTouches[0].pageY,
-                    X = moveEndX - startX,
-                    Y = moveEndY - startY;
-                if(cur_page > 0){//右
-                    if ( Math.abs(X) > Math.abs(Y) && X > 0 ) {
-                        cur_page--;
-                        if(cur_page < 1){
-                            cur_page = 1;
-                        }
-                    }
-                }
-
-                if(cur_page < tot_page){//左
-                    if ( Math.abs(X) > Math.abs(Y) && X < 0 ) {
-                        cur_page++;
-                        if(cur_page > tot_page){
-                            cur_page = tot_page;
-                        }
-                    }
-                }
-                _this.getpage(result, _this, cur_page);
-                if(cur_page == 1){
-                    $(".left_arr").hide();
-                    $(".right_arr").show();
-                }else if(cur_page > 1 && cur_page < tot_page){
-                    $(".left_arr").show();
-                    $(".right_arr").show();
-                }else{
-                    $(".left_arr").show();
-                    $(".right_arr").hide();
-                }
-
-
-
-            });
-
-
+            res = result;
+            _this.getpage(res, _this, cur_page);
+            console.log(cur_page+','+tot_page)
+            if(cur_page == 1){
+                $(".left_arr").hide();
+                $(".right_arr").show();
+            }else if(cur_page > 1 && cur_page < tot_page){
+                $(".left_arr").show();
+                $(".right_arr").show();
+            }else{
+                $(".left_arr").show();
+                $(".right_arr").hide();
+            }
 
         },
         gettechnology: function(result, _this){//获取个人技能

@@ -20,9 +20,9 @@ body {
 }
 header{
     width:100%;
-    height:5rem;
+    height: 4rem;
     background: rgba(0,0,0,.5);
-    line-height: 5rem;
+    line-height: 4rem;
     color: #fff;
     text-align: center;
     position: fixed;
@@ -34,7 +34,7 @@ header{
     width: 2rem;
     height:1.5rem;
     right:1rem;
-    top:1.75rem;
+    top: 1.5rem;
     position: absolute;
 }
 .top_liner{
@@ -75,9 +75,9 @@ header{
 }
 .listing{
     width:100%;
-    height:calc(100% - 5rem);
+    height: calc(100% - 4rem);
     position: fixed;
-    top:5rem;
+    top: 4rem;
     left:0;
     display: none;
     z-index: 999;
@@ -116,7 +116,7 @@ header{
 .header{
     width: 100%;
     height: 15rem;
-    padding: 2rem 0 7.5rem;
+    padding: 0rem 0 7.5rem;
     position: relative;
 }
 .head_bg{
@@ -214,7 +214,7 @@ header{
     width: 80%;
     height:3rem;
     line-height: 3rem;
-    margin: 2rem auto 0;
+    margin: 0rem auto 0;
     color: #fff;
     display: -webkit-box;
 }
@@ -247,7 +247,7 @@ header{
 }
 .dataList,.infolist{
     width:80%;
-    margin: 2rem auto 0;
+    margin: .5rem auto 0;
 }
 .infolist li{
     display: -webkit-box;
@@ -295,7 +295,7 @@ canvas{
 }
 .limit{
     width:80%;
-    margin: 2rem auto;
+    margin: 1rem auto;
     color: #fff;
     font-size: 1.2rem;
     line-height:1.4rem;
