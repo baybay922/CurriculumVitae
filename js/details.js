@@ -3,6 +3,7 @@
  * details.js
  */
 ;(function($){
+    var path = "10.70.12.88";
     var startx, starty,
         html = "",
         ind_A = 0,
