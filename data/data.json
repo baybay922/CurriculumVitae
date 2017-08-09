@@ -1,0 +1,164 @@
+{
+    "name": "吴贝贝",
+    "limit": "4年开发经验，负责过大型项目，重度极客，学习能力强",
+    "head" : "../images/head.jpg",
+    "age": "25岁",
+    "position": "web前端开发工程师",
+    "company": "北京汇聚融达网络科技有限公司",
+    "Telephone": "15600606171",
+    "email": "15600606171@163.com",
+    "Education": "本科",
+    "college": "安徽大学江淮学院",
+    "major": "计算机技术与应用",
+    "Graduationtime": "2012年毕业",
+    "workExperience": [
+        {
+            "Corporatename": "北京汇聚融达网络科技有限公司",
+            "worktime": [
+                "2014.10",
+                "至今"
+            ],
+            "professional": "web前端开发工程师",
+            "responsible": [
+                "公司官网及微信公众号二级页面交互效果的开发和页面的切图;",
+                "官网及微信公众号二级页面新模块的开发、bug修复和代码优化;",
+                "与后台开发人员配合实现功能需求;",
+                "各种活动页面，如宣传页，大转盘等;"
+            ]
+        },
+        {
+            "Corporatename": "北京大家网教育科技有限公司",
+            "worktime": [
+                "2012.08",
+                "2014.09"
+            ],
+            "professional": "web前端开发工程师",
+            "responsible": [
+                "负责整个官网交互效果的开发和部分页面的切图;",
+                "负责官网新模块的开发、bug修复和代码优化;",
+                "负责与后台开发人员配合实现功能需求;",
+                "与公司JS框架的开发和维护，公共组件开发;"
+            ]
+        }
+    ],
+    "ProjectExperience": [
+
+        {
+            "entryname": "传家宝",
+            "url": "http://m.51chuanjiabao.com/",
+            "projectTime": [
+                "2016.05",
+                "至今"
+            ],
+            "professional": "web前端开发工程师",
+            "responsible": "责将ui的PSD转为静态页面;完成脚本开发，兼容",
+            "ntroduction": "传家宝商城是北京汇聚融达网络科技有限公司倾力打造的大型网络购物平台。传家宝商城为商城经营者提供招商货源、商品上架、物流配送、网站维护、产品售后等关键环节的服务，让消费者享受 五星级购物体验的同时拥有物美价廉的优质产品；最大化减少产品关于货源、仓储、宣传、发货、价格、售后、诚信等一 系列的问题；"
+        },
+        {
+            "entryname": "羊倌羊",
+            "url": "test.yguany.com/",
+            "projectTime": [
+                "2016.04",
+                "至今"
+            ],
+            "professional": "web前端开发工程师",
+            "responsible": "负责将ui的PSD转为静态页面;完成脚本开发，兼容",
+            "ntroduction": "传家宝商城是北京汇聚融达网络科技有限公司倾力打造的大型网络购物平台。传家宝商城为商城经营者提供招商货源、商品上架、物流配送、网站维护、产品售后等关键环节的服务，让消费者享受 五星级购物体验的同时拥有物美价廉的优质产品；最大化减少产品关于货源、仓储、宣传、发货、价格、售后、诚信等一 系列的问题；"
+        },
+        {
+            "entryname": "财富派官网",
+            "url": "https://www.caifupad.com",
+            "projectTime": [
+                "2015.08",
+                "至今"
+            ],
+            "professional": "web前端开发工程师",
+            "responsible": "负责将ui的PSD转为静态页面;完成脚本开发，兼容",
+            "ntroduction": "财富派是由北京汇聚融达网络科技有限公司推出的互联网金融服务平台，总部位于北京CBD金融贸易中心财富派采用先进的管理模式，具备完善的金融风险评估体系、以及资深政策法规的专业操作团队，帮助小微企业主、工薪阶层等不同群体建立信用体制释放信用价值，获取信用资金。并始终以“安全”为核心，构筑可信赖的互联网金融服务平台。财富派平台已引入昆明御金资本的千万级A轮投资"
+        },
+        {
+            "entryname": "财富派官微主页",
+            "url": "m.caifupad.com/",
+            "projectTime": [
+                "2014.10",
+                "至今"
+            ],
+            "professional": "web前端开发工程师",
+            "responsible": "负责将ui的PSD转为静态页面;完成脚本开发，兼容",
+            "ntroduction": "财富派是由北京汇聚融达网络科技有限公司推出的互联网金融服务平台，总部位于北京CBD金融贸易中心财富派采用先进的管理模式，具备完善的金融风险评估体系、以及资深政策法规的专业操作团队，帮助小微企业主、工薪阶层等不同群体建立信用体制释放信用价值，获取信用资金。并始终以“安全”为核心，构筑可信赖的互联网金融服务平台。财富派平台已引入昆明御金资本的千万级A轮投资"
+        },
+        {
+            "entryname": "油菜花",
+            "url": "https://github.com/baybay922/ColeFowers/tree/master/html",
+            "projectTime": [
+                "2017.01",
+                "至今"
+            ],
+            "professional": "web前端开发工程师",
+            "responsible": "负责将ui的PSD转为静态页面;完成脚本开发，兼容",
+            "ntroduction": "油菜花（谐音有财花），这是一块为线下房抵押收单人员开发的一款H5功能，主要使用场景为房产评估审核、收单的作用。为业主足不出户，只需在网上发布房屋详细信息（楼盘名称、物业类型、建筑年代、所在楼层、总楼层、朝向、建筑面积、房型、装修信息和其它影响因素）。就会有专业评估师为其解答。方便、快捷。"
+        },
+        {
+            "entryname": "史家小学",
+            "url": "null",
+            "projectTime": [
+                "2014.5",
+                "2014.9"
+            ],
+            "professional": "web前端开发工程师",
+            "responsible": "负责将ui的PSD转为静态页面;完成脚本开发，兼容",
+            "ntroduction": "史家小学是一个在线教育的网站，主要分为教师端、学生端、家长端，为学生、老师、家长提供了良好的平台，为中小学 教学提供精品的教育资源 （课件、教案、论文、题库、同步、素材、课堂实录等）;"
+        },
+        {
+            "entryname": "大家网",
+            "url": "http://www.topsage.com/",
+            "projectTime": [
+                "2013.08",
+                "2014.04"
+            ],
+            "professional": "web前端开发工程师",
+            "responsible": "负责将ui的PSD转为静态页面;完成脚本开发，兼容",
+            "ntroduction": "大家网已发展成一家有相当影响力的、有着良好声誉的、粘性最强口碑最好的、资源最丰富的、学术水平很高的著名教育网站，在中国教育类网站中处领先地位。"
+        },
+        {
+            "entryname": "学派网",
+            "url": "http://www.studypay.com/",
+            "projectTime": [
+                "2012.08",
+                "2013.07"
+            ],
+            "professional": "web前端开发工程师",
+            "responsible": "负责将ui的PSD转为静态页面;完成脚本开发，兼容",
+            "ntroduction": "学派网是一个综合性的在线教育学习网站。学派网以大家论坛为依托，致力于为千万会员和广大学员提供更专业、更便捷、更高效、更全面的各类精品在线辅导课程。"
+        }
+    ],
+    "MainSkills":[
+        {
+          "technology":"熟练使用HTML+CSS对PC端及WAP端进行排版布局、浏览器兼容的解决及多个终端设备的适配;"  
+        },
+        {
+          "technology":"熟悉JavaScript、熟练使用jQuery完成web应用的开发;"  
+        },
+        {
+          "technology":"熟悉Zepto、iScroll、bootStrap等移动端框架;"  
+        },
+        {
+          "technology":"熟练使用HTML5+CSS3搭建App及微网页，能够解决Android、IOS设备之间出现的兼容问题;"  
+        },
+        {
+          "technology":"熟悉Ajax，能够配合后台完成请求、数据渲染等;"  
+        },
+        {
+          "technology":"熟练使用SCSS、LESS等;"  
+        },
+        {
+          "technology":"了解前端MVC框架Angularjs;"  
+        },
+        {
+          "technology":"了解seajs、requirejs; "  
+        },
+        {
+          "technology":"了解php、nodejs、angularjs、vuejs;"  
+        }
+    ]
+}
