@@ -8,31 +8,33 @@ body {
     margin: 0;
     overflow: hidden;
     font-family: 'Gudea', sans-serif;
-    background: #000;
+    background: #1c1c1c;
 }
 .wrapper{
     width:100%;
     height:100%;
-    position: relative;
-
+    z-index:999;
+    position: fixed;
+    top:5rem;
+    left:0;
 }
 header{
     width:100%;
-    height:3rem;
-    background:rgba(255,255,255,.2);
-    line-height: 3rem;
+    height:5rem;
+    background: rgba(0,0,0,.5);
+    line-height: 5rem;
     color: #fff;
     text-align: center;
     position: fixed;
     top:0;
     left:0;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 }
 .openBtn{
     width: 2rem;
     height:1.5rem;
     right:1rem;
-    top:.75rem;
+    top:1.75rem;
     position: absolute;
 }
 .top_liner{
@@ -73,19 +75,22 @@ header{
 }
 .listing{
     width:100%;
-    height:calc(100% - 3rem);
+    height:calc(100% - 5rem);
     position: fixed;
-    top:3rem;
+    top:5rem;
     left:0;
-    background:rgba(255,255,255,.2);
     display: none;
+    z-index: 999;
+    background: #242329;
 }
 .listing li{
     width: 100%;
-    height: 3rem;
-    line-height: 3rem;
-    text-align: center;
-    border-bottom: .5px solid #9e9e9e;
+    height: 4rem;
+    line-height: 4rem;
+    text-indent: 2rem;
+    background: url("../images/right.png") no-repeat 95% center;
+    background-size: 1rem 1.2rem;
+    border-bottom: 1px solid #1c1c1c;
     color: #fff;
     font-size: 1.2rem;
 }
@@ -108,12 +113,390 @@ header{
     -moz-border-radius:100%;
     border-radius:100%;
 }
+.header{
+    width: 100%;
+    height: 15rem;
+    padding: 2rem 0 7.5rem;
+    position: relative;
+}
+.head_bg{
+    width: 12rem;
+    height: 12rem;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.HeadPortrait{
+    width: 8rem;
+    height: 8rem;
+    border-radius: 100%;
+    margin: 2rem auto;
+    border: .4rem solid #fff;
+    overflow: hidden;
+    -webkit-box-shadow:0 0 20px #0194fe;
+    -moz-box-shadow:0 0 20px #0194fe;
+    box-shadow:0 0 20px #0194fe;
+    animation: indistinct 2s ease-in-out infinite;
+    -moz-animation: indistinct 2s ease-in-out infinite; /* Firefox */
+    -webkit-animation: indistinct 2s ease-in-out infinite;  /* Safari 和 Chrome */
+    -o-animation: indistinct 2s ease-in-out infinite;
+}
 
+@-webkit-keyframes indistinct{
+    0%{
+        box-shadow:0 0 30px #01effe;
+    }
+    50%{
+        box-shadow:0 0 0px #01effe;
+    }
+    100%{
+        box-shadow:0 0 30px #01effe;
+    }
+}
+@-moz-keyframes indistinct{
+    0%{
+        box-shadow:0 0 30px #01effe;
+    }
+    50%{
+        box-shadow:0 0 0px #01effe;
+    }
+    100%{
+        box-shadow:0 0 30px #01effe;
+    }
+}
+@-o-keyframes indistinct{
+    0%{
+        box-shadow:0 0 30px #01effe;
+    }
+    50%{
+        box-shadow:0 0 0px #01effe;
+    }
+    100%{
+        box-shadow:0 0 30px #01effe;
+    }
+}
+@keyframes indistinct{
+    0%{
+        box-shadow:0 0 30px #01effe;
+    }
+    50%{
+        box-shadow:0 0 0px #01effe;
+    }
+    100%{
+        box-shadow:0 0 30px #01effe;
+    }
+}
 
+.HeadPortrait img{
+    width: 100%;
+    height: auto;
+}
+.material{
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #000;
+}
+.monicker{
+    font-size: 1.4rem;
+    margin: .5rem 0;
+    color: #fff;
+}
+.material span{
+    display: block;
+    width: 80%;
+    height:auto;
+    margin:.5rem auto;
+    color: #fff;
+    text-align: left;
+    line-height: 1.8rem;
+}
+.caption{
+    width: 80%;
+    height:3rem;
+    line-height: 3rem;
+    margin: 2rem auto 0;
+    color: #fff;
+    display: -webkit-box;
+}
+.caption span:first-child{
+    display: block;
+    width:1.5rem;
+    height:1.5rem;
+    border-radius: 100%;
+    background: #35394a;
+    border:2px solid #0194fe;
+    position: relative;
+    margin-top: .6rem;
+}
+.caption span:first-child:after{
+    content:"";
+    width:1rem;
+    height:1rem;
+    display: block;
+    background: #0194fe;
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin:-.5rem;
+    -webkit-border-radius:100%;
+    -moz-border-radius:100%;
+    border-radius:100%;
+}
+.caption span:last-child {
+    margin-left: .5rem;
+}
+.dataList,.infolist{
+    width:80%;
+    margin: 2rem auto 0;
+}
+.infolist li{
+    display: -webkit-box;
+    height:2rem;
+    line-height:2rem;
+    color: #fff;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+}
+.infolist li span:first-child{
+    font-size:1.4rem;
+}
+.dataList li{
+    display: block;
+    height: auto;
+    color: #fff;
+    margin:1rem 0;
+}
+.dataList li span{
+    color: #fff;
+    display: block;
+    font-size: 1.2rem;
+    margin:.5rem 0;
+}
+.dataList li span:last-child{
+    width:100%;
+    height:2rem;
+    border:1px solid #0194fe;
+    border-radius: 5px;
+}
+.dataList li span:last-child i{
+    width: 0;
+    display: block;
+    height:2rem;
+    background: #0194fe;
+    text-align: center;
+    line-height: 2rem;
+}
+canvas{
+    width:100%;
+    height:100%;
+    position: fixed;
+    top:0;
+    left:0;
+}
+.limit{
+    width:80%;
+    margin: 2rem auto;
+    color: #fff;
+    font-size: 1.2rem;
+    line-height:1.4rem;
+}
+/* 工作经历 */
+.test{
+    width:100%;
+    height:100%;
+    position: fixed;
+    top:0;
+    left:0;
+    background: #000;
+}
+.workexperience{
+    width:80%;
+    height:auto;
+    margin:2rem auto 0;
+    padding-bottom: .5rem;
+}
+.workTitle{
+    width:50%;
+    height: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    font-size: 1.4rem;
+    color: #fff;
+    margin:2rem auto;
+    border:1px solid #fff;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+    position: relative;
+}
+.workTitle:after{
+    content: '';
+    display: block;
+    width:0;
+    height:0;
+    border-left:10px solid transparent;
+    border-right:10px solid transparent;
+    border-top:10px solid #fff;
+    background: none;
+    position: absolute;
+    bottom:-11px;
+    left:50%;
+    margin-left:-10px;
+}
+.detailBox{
+    width:100%;
+    height:auto;
+    margin: 4rem auto 0;
+    color: #fff;
+}
+.details{
+    width:100%;
+    height:auto;
+}
+.apellation{
+    width:100%;
+    height:auto;
+    margin:2rem 0 1rem;
+    display: -webkit-flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+}
+.company{
+    text-align: left;
+}
+.workTime {
+    text-align: right;
+}
+.introduce{
+    width:100%;
+    line-height: 1.6rem;
+}
+.introduce li{
+    width:100%;
+    height:auto;
 
+    display: -webkit-box;
+    font-size:1.2rem;
+}
+.liner{
+    width: 80%;
+    height:1px;
+    background: #fff;
+    margin:0 auto;
+}
 
+.MainSkills{
+    width:80%;
+    height:auto;
+    margin: 2rem auto 0;
+}
+.MainSkills li{
+    color: #fff;
+    line-height: 2.4rem;
+    font-size: 1.2rem;
+}
+.linerY{
+    width:2px;
+    height:100%;
+    background: #37354e;
+    position: absolute;
+    top:4.5rem;
+    left:4rem;
+}
+.objectlist{
+    width:100%;
+    height:auto;
+}
+.objectlist li{
+    width: 80%;
+    position: relative;
+    margin:1.5rem auto 0;
+}
+.objectlist li span{
+    position: absolute;
+    top:50%;
+    left: 0;
+    display: block;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 100%;
+    background: #37354e;
+    border: 2px solid #000;
+    line-height: 2.3rem;
+    font-size: 1.4rem;
+    text-align:center;
+    margin-top: -0.75rem;
+}
+.objectlist li span:after{
+    content: "";
+    width:.8rem;
+    height:.8rem;
+    background: #36a6fc;
+    position: absolute;
+    top:.35rem;
+    left:.3rem;
+    border-radius: 100%;
+}
+.objectlist li a{
+    display: block;
+    width: 90%;
+    height:auto;
+    margin: 0 auto;
+    color: #fff;
+    margin-left: 4rem;
+    position: relative;
+    background: #25242b;
+    border-radius: 5px;
+}
+.objectlist li a:after{
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-right: 20px solid #25242b;
+    border-bottom: 10px solid transparent;
+    position: absolute;
+    left: -18px;
+    top:50%;
+    margin-top: -10px;
+}
+.objectlist li a h3{
+    display: block;
+    width:90%;
+    height:3rem;
+    line-height:3rem;
+    font-size: 1.6rem;
+    color: #36a6fc;
+}
+.describe{
+    width: 90%;
+    height:auto;
+    padding:1rem .5rem;
+    margin: -1px auto 0;
+    line-height: 1.4rem;
+}
+.left_arr{
+    width: 2rem;
+    height:2rem;
+    background: url("../images/left_arr.png") no-repeat center;
+    background-size: contain;
+    position: absolute;
+    left:1rem;
+    top:50%;
+    margin-top: -1rem;
+    display: none;
+}
+.right_arr{
+    width: 2rem;
+    height:2rem;
+    background: url("../images/right_arr2.png") no-repeat center;
+    background-size: contain;
+    position: absolute;
+    right:1rem;
+    top:50%;
+    margin-top: -1rem;
 
-
+}
 
 
 
