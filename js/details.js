@@ -64,7 +64,6 @@
                             }
                             _this.getpage(res, _this, cur_page);
                         }
-                        console.log(cur_page)
                         break;
                     case 4:
                         if(model == 4){
@@ -74,7 +73,6 @@
                             }
                             _this.getpage(res, _this, cur_page);
                         }
-                        console.log(cur_page)
                         break;
                     default:
                 }
@@ -202,16 +200,13 @@
                     +'<li class="wow fadeInDown" data-wow-duration="0.8s" data-wow-delay="1s"><span>JAVASCRIPT:</span><span data-width="75"><i></i></span></li>'
                     +'<li class="wow fadeInDown" data-wow-duration="0.8s" data-wow-delay="1.2s"><span>CSS:</span><span data-width="90"><i></i></span></li>'
                     +'<li class="wow fadeInDown" data-wow-duration="0.8s" data-wow-delay="1.4s"><span>HTML5:</span><span data-width="100"><i></i></span></li>'
-                    +'<li class="wow fadeInDown" data-wow-duration="0.8s" data-wow-delay="1.6s"><span>PS:</span><span data-width="5"><i></i></span></li>'
-                    +'<li class="wow fadeInDown" data-wow-duration="0.8s" data-wow-delay="1.8s"><span>angular:</span><span data-width="5"><i></i></span></li>'
-                    +'<li class="wow fadeInDown" data-wow-duration="0.8s" data-wow-delay="2s"><span>react:</span><span data-width="5"><i></i></span></li>'
-                    +'<li class="wow fadeInDown" data-wow-duration="0.8s" data-wow-delay="2.2s"><span>vue:</span><span data-width="5"><i></i></span></li>'
+                    +'<li class="wow fadeInDown" data-wow-duration="0.8s" data-wow-delay="1.6s"><span>PS:</span><span data-width="50"><i></i></span></li>'
                 +'</ul>'
              $(html).appendTo(page);
              if(_this != null){
              setTimeout(function(){
              _this.progress();
-             },2500)
+             },2000)
              }
         },
         getwork: function(result, _this){//获取工作经历
@@ -256,7 +251,7 @@
         gettechnology: function(result, _this){//获取个人技能
             var cont = "";
             $.each(result.MainSkills,function(i, k){
-                cont+='<li class="wow flipInY" data-wow-duration="1s" data-wow-delay="1.'+i+'s"><span>'+(i+1)+'、</span>'+k.technology+'</li>';
+                cont+='<li class="wow flipInY" data-wow-duration="1s" data-wow-delay="1.'+i+'s"><span>'+(i+1)+'、</span><p>'+k.technology+'</p></li>';
             });
             cont = '<h2 class="caption wow rotateInDownLeft" data-wow-duration="0.8s" data-wow-delay=".5s"><span></span><span>个人评价</span></h2><ul id="MainSkills" class="MainSkills">'+ cont +'</ul>';
             $(cont).appendTo(page);

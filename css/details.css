@@ -394,6 +394,12 @@ canvas{
     color: #fff;
     line-height: 2.4rem;
     font-size: 1.2rem;
+    display: -webkit-box;
+}
+.MainSkills li p{
+    font-family: "微软雅黑";
+    line-height: 2.4rem;
+
 }
 .linerY{
     width:2px;
